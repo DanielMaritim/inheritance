@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inheritance</title>
+</head>
+<body>
+	
+</body>
+
+<script type="text/javascript">
+
+	class Person  {
+		constructor(name,age,weight) {
+			this.name = name;
+			this.age = age;
+			this.weight = weight;
+		
+		}
+		displayWeight(){
+			console.log(this.weight);
+		}
+		
+		displayAge(){
+			console.log(this.age);
+		}
+		
+		displayName(){
+			console.log(this.name);
+		}
+		
+class Programmer extends Person {
+			constructor(name,age,weight,language) {
+				super (name,age,weight);
+				this.language = language;
+			}
+			displayLanguage(){
+			console.log(this.languae);
+		}
+	
+	} 
+	let dan = new Programmer('dan',32,75,'JavaScript');
+	
+	dan.displayWeight();
+	dan.displayAge();
+	dan.displayLanguage();
+
+</script>
+
+</html>
